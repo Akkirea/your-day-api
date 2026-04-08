@@ -36,7 +36,7 @@ async function initDb() {
 }
 
 function createToken(userId) {
-  return jwt.sign({ userId }, jwtSecret, { expiresIn: "7d" });
+  return jwt.sign({ userId }, jwtSecret, { expiresIn: "365d" });
 }
 
 function auth(req, res, next) {
